@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {NewsPage} from "../news/news";
 
 @Component({
   selector: 'page-about',
@@ -10,7 +11,7 @@ export class AboutPage {
   constructor(public navCtrl: NavController) {
 
   }
-  getData(){
-
+  goNews(){
+    this.navCtrl.push(NewsPage);
   }
 }

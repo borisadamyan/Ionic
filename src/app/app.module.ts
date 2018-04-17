@@ -12,6 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {HttpClientModule} from "@angular/common/http";
 import {HttpModule} from "@angular/http";
+import {NewsPage} from "../pages/news/news";
+import {SingleNewsPage} from "../pages/single-news/single-news";
+import {NewsDetailsPage} from "../pages/news-details/news-details";
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import {HttpModule} from "@angular/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+      NewsPage,
+      SingleNewsPage,
+      NewsDetailsPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +39,10 @@ import {HttpModule} from "@angular/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+      NewsPage,
+      SingleNewsPage,
+      NewsDetailsPage
   ],
   providers: [
     StatusBar,
